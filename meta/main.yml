@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: alok
+  author: sandeep
   description: Quick and easy mysql backup and restore
   company: Opstree
   license: MIT
