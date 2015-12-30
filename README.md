@@ -25,6 +25,18 @@ backup_dir: "/opt/"
 
 s3_bucket_name: "backupMysql"
 
+full_data_backup: "true"
+
+database_backup: "false"
+
+table_backup: "false"
+
+restore_backup: "true"
+
+restore_database: "false"
+
+Here if you want to backup mysql only then set full_data_backup as "true" and other as false, accordingly you can set other parameter as true or false depending on your need.
+
 Example Playbook
 ----------------
 
