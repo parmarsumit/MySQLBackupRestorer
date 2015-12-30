@@ -6,7 +6,7 @@ This role takes mysql backup including all cases(Full, Single database, Single t
 Assumption
 --------------
 
-Aws Cli is pre-installed on the mongodb server
+Aws Cli is pre-installed on the mysql server
 
 Role Variable
 ------------
