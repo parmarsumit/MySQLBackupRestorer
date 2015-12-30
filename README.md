@@ -12,11 +12,17 @@ Role Variable
 ------------
 
 mySql_backup_file: "/opt/backup.sql"
+
 mySql_userName: "root"
+
 mySql_password: "opstree123"
+
 mySql_databaseName: "opstree"
+
 mySql_tableName: "DevOps"
+
 backup_dir: "/opt/"
+
 s3_bucket_name: "backupMysql"
 
 Example Playbook
