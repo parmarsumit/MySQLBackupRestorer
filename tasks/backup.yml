@@ -17,7 +17,7 @@
   when: table_backup
 
 - name: Creates tar of backup file ...
-  command: tar -cvf {{ backup_dir }}/{{ ansible_hostname }}-{{ ansible_date_time.date }}-backup.tar.gz {{ mySql_backup_file }}
+  command: tar -cvf {{ backup_dir }}/Mysql-backup.tar.gz {{ mySql_backup_file }}
 
 - name: upload in s3 bucket ...
-  command: aws s3 cp {{ backup_dir }}/{{ ansible_hostname }}-{{ ansible_date_time.date }}:{{ ansible_date_time.time }}-backup.tar.gz s3://{{ s3_bucket_name }}
+  command: aws s3 cp {{ backup_dir }}/Mysql-backup.tar.gz s3://{{ s3_bucket_name }}/{{ ansible_date_time.date }}/
